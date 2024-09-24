@@ -227,7 +227,7 @@ button {
 }
 
 .contDetails {
-    border: 1px solid;
+    /* border: 1px solid; */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -247,7 +247,7 @@ button {
 }
 
 .infor-count {
-    border: 1px red solid;
+    /* border: 1px red solid; */
     margin-bottom: 60px;
     line-height: 30px;
     
@@ -300,6 +300,9 @@ button {
         padding: 20px; /* Reduce padding */
     }
 
+    .countryDescrip {
+        padding: 0 30px;
+    }
     .country {
         width: 100%; /* Full width for country cards on smaller screens */
         max-width: 300px; /* Set a maximum width */
@@ -307,7 +310,7 @@ button {
     }
 
     .countryFlag {
-        height: 150px; /* Adjust flag height */
+        height: 200px; /* Adjust flag height */
     }
 
     .countryDetails h5 {
@@ -375,5 +378,9 @@ button {
 
     .countryInfo {
         width: auto; /* Adjust width for smaller screens */
+    }
+
+    .countryDescrip {
+        padding: 0 30px;
     }
 }
