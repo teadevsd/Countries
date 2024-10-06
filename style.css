@@ -169,6 +169,12 @@ button {
     border-radius: 5px;
     display: flex;
     flex-direction: column;
+    transition: all 0.3s ease-in-out;
+}
+
+.country:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 2opx rgba(128, 128, 128, 0.288);
 }
 
 .countryFlag {
@@ -210,11 +216,15 @@ button {
 }
 
 .countryDescrip {
-    padding: 0px 30px;
+    padding: 0 30px;
+    box-sizing: border-box; /* Ensures padding is included in element's total width */
 }
 
 .flagDetails img {
-    width: 500px;
+    width: 100%; /* Makes images scale to fit their container */
+    max-width:400px; /* Optional: limit the max width */
+    height: auto; /* Ensures aspect ratio is maintained */
+    object-fit: cover; /* Ensures images fit their container */
 }
 
 .flagDetails {
@@ -258,6 +268,12 @@ button {
     margin-bottom: 30px;
     align-items: center;
     gap: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.border button:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
 }
 
 .border button {
@@ -365,7 +381,7 @@ button {
     }
 
     .countryFlag {
-        height: 120px; /* Further adjust flag height for mobile */
+        height: 200px; /* Further adjust flag height for mobile */
     }
 
     .countryDetails h5 {
