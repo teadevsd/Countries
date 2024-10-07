@@ -217,14 +217,14 @@ button {
 
 .countryDescrip {
     padding: 0 30px;
-    box-sizing: border-box; /* Ensures padding is included in element's total width */
+    box-sizing: border-box;
 }
 
 .flagDetails img {
-    width: 100%; /* Makes images scale to fit their container */
-    max-width:400px; /* Optional: limit the max width */
-    height: auto; /* Ensures aspect ratio is maintained */
-    object-fit: cover; /* Ensures images fit their container */
+    width: 100%;
+    max-width:400px;
+    height: auto; 
+    object-fit: cover;
 }
 
 .flagDetails {
@@ -265,6 +265,7 @@ button {
 
 .border {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 30px;
     align-items: center;
     gap: 10px;
@@ -284,116 +285,115 @@ button {
     font-size: 18px;
 }
 
-/* Existing styles above */
 
-@media (max-width: 768px) { /* Tablet and Mobile Screens */
+
+@media (max-width: 768px) { 
     .navBar {
-        flex-direction: row; /* Stack elements vertically */
-        align-items: flex-start; /* Align items to the start */
-        padding: 20px; /* Adjust padding for smaller screens */
+        flex-direction: row;
+        align-items: flex-start; 
+        padding: 20px; 
     }
 
     .searchFilter {
-        flex-direction: column; /* Stack search and filter vertically */
-        padding: 20px; /* Adjust padding */
+        flex-direction: column;
+        padding: 20px; 
         display: ;
     }
 
     .searchCont {
-        width: 100%; /* Full width for the search container */
-        margin-bottom: 10px; /* Add space below */
+        width: 100%; 
+        margin-bottom: 10px; 
     }
 
     .search {
-        width: 100%; /* Full width for the input */
+        width: 100%; 
     }
 
     .dropdownMenu {
-        width: 100%; /* Full width for the dropdown */
+        width: 100%; 
     }
 
     .countryContainer {
-        padding: 20px; /* Reduce padding */
+        padding: 20px; 
     }
 
     .countryDescrip {
         padding: 0 30px;
     }
     .country {
-        width: 100%; /* Full width for country cards on smaller screens */
-        max-width: 300px; /* Set a maximum width */
-        margin: 0 auto; /* Center the country cards */
+        width: 100%; 
+        max-width: 300px; 
+        margin: 0 auto; 
     }
 
     .countryFlag {
-        height: 200px; /* Adjust flag height */
+        height: 200px; 
     }
 
     .countryDetails h5 {
-        font-size: 18px; /* Reduce font size */
+        font-size: 18px; 
     }
 
     .countryDescrip {
-        padding: 20px; /* Adjust padding */
+        padding: 20px; 
     }
 
     .flagDetails img {
-        width: 100%; /* Make flag image responsive */
-        height: auto; /* Maintain aspect ratio */
+        width: 100%; 
+        height: auto; 
     }
 
     .countryInfo {
-        flex-direction: column; /* Stack information vertically */
-        width: 300px; /* Adjust width */
+        flex-direction: column;
+        width: 300px;
         gap: 0px;
-        justify-content: ;
     }
 
     .border {
-        flex-direction: row; /* Stack border buttons vertically */
+        flex-direction: row; 
     }
 
     .border button {
-        width: 100%; /* Full width for border buttons */
-        margin-bottom: 5px; /* Add space between buttons */
+        width: 100%;
+        margin-bottom: 5px;
     }
 }
 
-@media (max-width: 480px) { /* Mobile screens */
+@media (max-width: 480px) { 
     .navBar {
-        padding: 15px; /* Adjust padding */
+        padding: 15px;
     }
 
     .searchCont {
-        padding: 10px; /* Adjust padding */
+        padding: 10px; 
     }
 
     .search {
-        font-size: 14px; /* Reduce font size */
+        font-size: 14px; 
     }
 
     .toggle {
-        font-size: 14px; /* Reduce font size for toggle button */
+        font-size: 14px; 
     }
 
     .country {
-        max-width: 100%; /* Allow country cards to take full width */
+        max-width: 100%; 
     }
 
     .countryFlag {
-        height: 200px; /* Further adjust flag height for mobile */
+        height: 200px; 
     }
 
     .countryDetails h5 {
-        font-size: 16px; /* Reduce font size for mobile */
+        font-size: 16px; 
     }
 
     .contDetails h3 {
-        font-size: 24px; /* Reduce heading size for mobile */
+        font-size: 24px; 
     }
 
     .countryInfo {
-        width: auto; /* Adjust width for smaller screens */
+        width: auto; 
     }
 
     .countryDescrip {
